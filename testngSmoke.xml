@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="C:/_Projects/MvnTT/MvnTT">
+        <classes>
+            <class name="com.ttms.RESTAPITest">
+                <methods>
+                    <include name="apiTest1"/>
+                    <include name="seleniumTest2"/>
+                </methods>
+            </class>
+            <class name="com.ttms.SeleniumTest">
+                <methods>
+                    <exclude name="seleniumTest1"/>
+                    <exclude name="seleniumTest2"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
